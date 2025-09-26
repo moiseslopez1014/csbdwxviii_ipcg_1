@@ -1,34 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escapa</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style_moises.css" />
+  </head>
+  <body>
     <header>
-        <img src="images/logo.jpg" alt="Logo de Escapa" width="100px">
-        <h1>Disconnect to <b>Connect</b> again</h1>
-        <nav>
-            <a href="#info">Information</a>
-            <a href="#reserve">Reserve</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <img src="images/logo.jpg" alt="Logo de Escapa" width="100px" />
+      <h1>Disconnect to <b>Connect</b> again</h1>
+      <nav>
+        <a href="#info">Information</a>
+        <a href="#reserve">Reserve</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
     <main>
-        <section id="info">
-            <h2>Escape to nature, reconnect to life</h2>
-            <p>Welcome to your perfect mountain getaway. In Escapa, we offer a curated selection of unique vacation stays nestled in the heart of the mountains — get comfy or adventurous, or both. It's up to you.<br>
-            Whether you're looking for cozy woodland cabins, magical treehouses tucked among the treetops, or a relaxing retreat in our luxurious spa complex, we have something for every kind of traveler. Reconnect with nature while enjoying modern amenities and warm hospitality.<br>
-            And for the most demanding adventurers, we got a selection of thrilling, heart-pounding activities to have the best time of the day.</p>
-            <p>What are you waiting for? Escapa with us, reconnect to the best life can offer.</p>
-        </section>
-        <section id="reserve"></section>
-        <section id="contact"></section>
-    </main>
-    <footer>
+      <section id="info">
+        <h2>Escape to nature, reconnect to life</h2>
+        <p>
+          Welcome to your perfect mountain getaway. In Escapa, we offer a
+          curated selection of unique vacation stays nestled in the heart of the
+          mountains — get comfy or adventurous, or both. It's up to you.<br />
 
-    </footer>
-</body>
+          Whether you're looking for cozy woodland cabins, magical treehouses
+          tucked among the treetops, or a relaxing retreat in our luxurious spa
+          complex, we have something for every kind of traveler. Reconnect with
+          nature while enjoying modern amenities and warm hospitality.<br />
+
+          And for the most demanding adventurers, we got a selection of
+          thrilling, heart-pounding activities to have the best time of the day.
+        </p>
+
+        <p>
+          What are you waiting for? Escapa with us, reconnect to the best life
+          can offer.
+        </p>
+      </section>
+      <section id="reserve">
+        <h3>Choose your stay:</h3>
+        <div class="panelReserve" id="stays">
+          <div class="selectionImages">
+            <div>
+              <p>Bottom mountain</p>
+              <img
+                src="images/cabin1.jpeg"
+                alt="Bottom Mountain"
+                width="100px"
+              />
+            </div>
+            <div>
+              <p>Middle Mountain</p>
+              <img
+                src="images/cabin3.jpg"
+                alt="Middle Mountain"
+                width="100px"
+              />
+            </div>
+            <div>
+              <p>Smuggler's Rest</p>
+              <img
+                src="images/thouse1.png"
+                alt="Smuggler's Rest"
+                width="100px"
+              />
+            </div>
+            <div>
+              <p>King of the mountain</p>
+              <img
+                src="images/cabin2.jpg"
+                alt="King of the Mountain"
+                width="100px"
+              />
+            </div>
+          </div>
+          <div class="markSelection">
+            <input type="radio" value="BottomMountain" />Bottom mountain<br />
+            <input type="radio" value="MiddleMountain" />Middle Mountain<br />
+            <input type="radio" value="SmugglersRest" />Smuggler's Rest<br />
+            <input type="radio" disabled value="MingMountain" />King of the
+            Mountain<br />
+            <select>
+              <option value="Week19">Week19</option>
+              <option value="Week20">Week20</option>
+              <option value="Week21" disabled>Week21</option>
+              <option value="Week22">Week22</option>
+              <option value="Week23">Week23</option>
+              <option value="Week24">Week24</option>
+              <option value="Week25">Week25</option>
+              <option value="Week26">Week26</option>
+              <option value="Week27">Week27</option>
+            </select>
+          </div>
+        </div>
+        <div class="panelReserve" id="activities">
+          <div class="selectionImages">
+            <img src="images/zipline.jpg" alt="Zip-line" width="100px" />
+            <img src="images/hiking.jpg" alt="Hiking" width="100px" />
+            <img src="images/climbing.jpg" alt="Climbing" width="100px" />
+          </div>
+            <div class="markSelection">
+                <div>
+                    <h3><input type="checkbox" value="zipline">Zip-line</h3>
+                    Tuesdays and Thursdays<br>
+                    From 16 till 18 
+                </div>
+                <div>
+                    <h3><input type="checkbox" value="hiking">Hiking</h3>
+                    Mondays, Wednesdays and Saturdays<br>
+                    From 10 till 16
+                </div>
+                <div>
+                    <h3><input type="checkbox" value="climbing">Climbing</h3>
+                    Fridays and Sundays<br>
+                    From 9 till 16 
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Confirm my choices and reserve!" />
+      </section>
+      <section id="contact"></section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
