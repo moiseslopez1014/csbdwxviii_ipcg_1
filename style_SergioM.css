@@ -83,5 +83,9 @@ hr{
     justify-content: center;
 }
 
-
+h3{
+    color: purple;
+    border-style: dotted;
+    border-width: 4px;
+}
 
