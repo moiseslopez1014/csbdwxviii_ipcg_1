@@ -5,14 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escapa</title>
     <link rel="stylesheet" href="style_moises.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--HEADER--SECTION-->
     <header class="header">
-      <img class="header__logo" src="images/logo.jpg" alt="Logo de 
-      Escapa" width="100px" />
+      <img
+        class="header__logo"
+        src="images/logo.jpg"
+        alt="Logo de 
+      Escapa"
+        width="100px"
+      />
       <div class="header__div">
-      <h1>Disconnect to <b>Connect</b> again</h1></div>
+        <h1><b>Connect</b> again</h1>
+      </div>
       <nav class="header__nav">
         <a class="header__link" href="#info">Information</a>
         <a class="header__link" href="#reserve">Reserve</a>
@@ -43,109 +61,114 @@
         </p>
       </section>
       <!--RESERVE--SECTION-->
-      <section id="reserve">
-        <h2>Choose your stay:</h2>
+      <h2>Reserve now</h2>
+      <section class="reserve_container" id="reserve">
         <div class="panelReserve" id="stays">
           <div class="selectionImages">
             <div>
-              <p>Bottom mountain</p>
               <img
                 src="images/cabin1.jpeg"
                 alt="Bottom Mountain"
                 width="100px"
               />
+              <p>Bottom mountain</p>
             </div>
             <div>
-              <p>Middle Mountain</p>
               <img
                 src="images/cabin3.jpg"
                 alt="Middle Mountain"
                 width="100px"
               />
+              <p>Middle Mountain</p>
             </div>
             <div>
-              <p>Smuggler's Rest</p>
               <img
                 src="images/thouse1.png"
                 alt="Smuggler's Rest"
                 width="100px"
               />
+              <p>Smuggler's Rest</p>
             </div>
             <div>
-              <p>King of the mountain</p>
               <img
                 src="images/cabin2.jpg"
                 alt="King of the Mountain"
-                width="100px"
+                width="120px"
+                height="100px"
               />
+              <p>King of the mountain</p>
             </div>
           </div>
-          <div class="markSelection">
-            <input type="radio" value="BottomMountain" />Bottom mountain<br />
-            <input type="radio" value="MiddleMountain" />Middle Mountain<br />
-            <input type="radio" value="SmugglersRest" />Smuggler's Rest<br />
-            <input type="radio" disabled value="MingMountain" />King of the
-            Mountain<br />
-            <select>
-              <option value="Week19">Week19</option>
-              <option value="Week20">Week20</option>
-              <option value="Week21" disabled>Week21</option>
-              <option value="Week22">Week22</option>
-              <option value="Week23">Week23</option>
-              <option value="Week24">Week24</option>
-              <option value="Week25">Week25</option>
-              <option value="Week26">Week26</option>
-              <option value="Week27">Week27</option>
-            </select>
-          </div>
         </div>
-        <div class="panelReserve" id="activities">
-          <div class="selectionImages">
+        <div class="markSelection">
+          <div class="panelReserve" id="activities">
             <img src="images/zipline.jpg" alt="Zip-line" width="100px" />
             <img src="images/hiking.jpg" alt="Hiking" width="100px" />
             <img src="images/climbing.jpg" alt="Climbing" width="100px" />
           </div>
-          <div class="markSelection">
-            <div>
-              <h3><input type="checkbox" value="zipline" />Zip-line</h3>
-              Tuesdays and Thursdays<br />
-              From 16 till 18
-            </div>
-            <div>
-              <h3><input type="checkbox" value="hiking" />Hiking</h3>
-              Mondays, Wednesdays and Saturdays<br />
-              From 10 till 16
-            </div>
-            <div>
-              <h3><input type="checkbox" value="climbing" />Climbing</h3>
-              Fridays and Sundays<br />
-              From 9 till 16
-            </div>
+          <select name="house" id="houseSelection">
+            <option value="bottomMountain">Bottom Mountain</option>
+            <option value="middleMountain">Middle Mountain</option>
+            <option value="smugglersRest">Smuggler's Rest</option>
+            <option value="kingMountain" disabled>King of the mountain</option>
+          </select>
+          <select name="week" id="weekSelection">
+            <option value="Week19">Week19</option>
+            <option value="Week20">Week20</option>
+            <option value="Week21" disabled>Week21</option>
+            <option value="Week22">Week22</option>
+            <option value="Week23">Week23</option>
+            <option value="Week24">Week24</option>
+            <option value="Week25">Week25</option>
+            <option value="Week26" disabled>Week26</option>
+            <option value="Week27">Week27</option>
+          </select>
+          <div>
+            <h3><input type="checkbox" value="zipline" /> Zip-line</h3>
+            Tuesdays and Thursdays<br />
+            From 16 till 18
+          </div>
+          <div>
+            <h3><input type="checkbox" value="hiking" /> Hiking</h3>
+            Mondays, Wednesdays and Saturdays<br />
+            From 10 till 16
+          </div>
+          <div>
+            <h3><input type="checkbox" value="climbing" /> Climbing</h3>
+            Fridays and Sundays<br />
+            From 9 till 16
           </div>
         </div>
-        <input type="submit" value="Confirm my choices and reserve!" />
       </section>
+      <input
+        id="confirmButton"
+        type="submit"
+        value="Confirm my choices and reserve!"
+      />
       <section id="contact">
         <h2>Contact Us</h2>
         <div id="contactForm">
-            <div>
-                Your name:<br>
-                E-mail:<br>
-                Phone:
-            </div>
-            <div>
-                <input type="text" placeholder="Your name"><br>
-                <input type="email" placeholder="for@example.com"><br>
-                <input type="tel" minlength="9" placeholder="Your phone">
-            </div>
-            <input type="submit" value="Contact me!">
+          <div>
+            Your name:<br />
+            E-mail:<br />
+            Phone:
+          </div>
+          <div>
+            <input type="text" placeholder="Your name" /><br />
+            <input type="email" placeholder="for@example.com" /><br />
+            <input type="tel" minlength="9" placeholder="Your phone" />
+          </div>
+          <input type="submit" value="Contact me!" />
         </div>
         <div id="contactInfo">
-            <ul>
-                <li>Address:<address>Sin salida 123, Caos 11100. Pais de la piruleta</address></li>
-                <li>Email: <a href="mailto:info@escapa.com">info@escapa.com</a></li>
-                <li>Phone: +34 123 45 67 89</li>
-            </ul>
+          <ul>
+            <li>
+              Address:
+              <address>Sin salida 123, Caos 11100. Pais de la piruleta</address>
+            </li>
+            <li>Email: <a href="mailto:info@escapa.com">info@escapa.com</a></li>
+            <li>Phone: +34 123 45 67 89</li>
+          </ul>
         </div>
       </section>
     </main>
