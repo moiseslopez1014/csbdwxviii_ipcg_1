@@ -1,0 +1,24 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+#info{
+    height: 600px;
+}
+#booking{
+    height: 600px;
+}
+
+body {
+    background-color: rgb(244, 255, 126);
+
+}
+
+header img {
+    border-radius: 50%;
+}
+
+header {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
